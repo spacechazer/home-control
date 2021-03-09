@@ -1,0 +1,10 @@
+{
+    "philipshue": {
+        "authorization": "cQZCBT7WaVNdLvj8kxSKYiJSfD5KNmmzEXV1SsSr",
+        "ipAddress": "192.168.2.2"
+    },
+    "sonybravia": {
+        "authorization": "CwTyQ",
+        "ipAddress": "192.168.2.7"
+    }
+}
