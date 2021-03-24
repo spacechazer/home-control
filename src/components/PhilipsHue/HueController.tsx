@@ -81,8 +81,6 @@ const HueController = (props: LightProps) => {
     const classes = useStyles();
     const { id, light, sendHueRequest, setIsUpdating } = props;
 
-    //console.log("light", light);
-
     const [showColorDialog, setShowColorDialog] = useState<boolean>(false);
     const [showInfoDialog, setShowInfoDialog] = useState<boolean>(false);
     const [color, setColor] = useState();

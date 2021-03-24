@@ -251,6 +251,15 @@ const SonyBravia = (props: any) => {
         }
     }, [mute, sendTVRequest]);
 
+    const sendWol = () => {
+        fetch("/wol-tv")
+            .then((res) => res.text())
+            .then((done) => {
+                console.log("done?", done);
+                return done;
+            });
+    };
+
     return (
         <React.Fragment>
             <Typography
@@ -263,6 +272,10 @@ const SonyBravia = (props: any) => {
                     Status: {tvPowerStatus}, Volume: {volume}
                 </Typography> */}
             </Typography>
+
+            {/* <Button onClick={sendWol} variant="contained">
+                Send TV WOL!
+            </Button> */}
 
             <Grid container spacing={1}>
                 <Grid item xs={12}>
